@@ -5,7 +5,7 @@
 ![image](https://img.shields.io/badge/mint--ui-2.2.13-blue.svg)
 
 ## 简介
-vue2-native 是一个仿今日头条app的[混合开发](https://baike.baidu.com/item/hybrid%20app/270520?fr=aladdin)项目，页面代码使用Vue开发，原生功能使用[cordova](http://cordova.axuer.com/)并打包成app，共20个页面，涉及文章的分类、展示、阅读、推荐、搜索和用户的登录、评论、收藏以及后台文章编辑等等，是一个完整的生态链。其复杂度不用说大家也能感受到。这是一个很好的vue进阶机会，请耐心阅读。
+vue2-native 是一个仿今日头条app的[混合开发](https://baike.baidu.com/item/hybrid%20app/270520?fr=aladdin)项目，页面代码使用Vue开发，原生功能使用[cordova](http://cordova.axuer.com/)并打包成app，共20个页面，涉及文章的分类、展示、阅读、推荐、搜索和用户的登录、评论、收藏以及后台文章编辑等等，是一个完整的生态链。其复杂度不用说大家也能感受到。这是一个很好的vue进阶机会，请保持足够的耐心。
 
 ## 说明
 > 如果对你有帮助，您可以点右上角 "star"一下，非常感谢！^_^ 🌹
@@ -17,9 +17,9 @@ vue2-native 是一个仿今日头条app的[混合开发](https://baike.baidu.com
 ## 最终目标
 
 - 第一阶段：[vue2-echo](https://github.com/uncleLian/vue2-echo) —— echo回声（ 移动端，难度：★★☆☆☆  入门项目）
-- 第二阶段：[vue2-news](https://github.com/uncleLian/vue2-news) —— 今日头条（ 移动端，难度：★★★☆☆  过渡项目）
-- 第三阶段：[vue2-health](https://github.com/uncleLian/vue2-health) —— 头条号（ pc端，难度：★★★☆☆  过渡项目）
-- 第四阶段：[vue2-native](https://github.com/uncleLian/vue2-native) —— 今日头条（ native端，难度：★★★★☆  进阶项目）
+- 第二阶段：[vue2-news](https://github.com/uncleLian/vue2-news) —— 今日头条（ 移动端，难度：★★★☆☆ 过渡项目）
+- 第三阶段：[vue2-health](https://github.com/uncleLian/vue2-health) —— 头条号（ pc端，难度：★★★☆☆ 过渡项目）
+- 第四阶段：[vue2-native](https://github.com/uncleLian/vue2-native) —— 今日头条（ native端，难度：★★★★☆ 进阶项目）
 
 ##### 注：此系列只关注前端项目的实现，后端等知识不是此系列的范围，但会告知一二。
 
@@ -33,15 +33,17 @@ vue2-native 是一个仿今日头条app的[混合开发](https://baike.baidu.com
 
 > 4、关于后台文章管理，操作的都是真实后台数据，为了大家都能查看一个很真的数据信息，请勿随意修改原有数据，可以新建去操作查看效果。
 
+> 5、下载App安装包请使用手机浏览器下载。
+
 ## 项目演示 
 
 [项目演示请戳这里](http://native.liansixin.win)（请使用手机模式预览）
 
-<img src="https://github.com/uncleLian/vue2-news/raw/master/screenshots/native_QRcode.png" width="250" height="250"/>
+<img src="https://github.com/uncleLian/vue2-native/raw/master/screenshots/native_QRcode.png" width="250" height="250"/>
 
 [安装包请戳这里](http://m.toutiaojk.com/guide.html)（目前只支持 Android）
 
-<img src="https://github.com/uncleLian/vue2-news/raw/master/screenshots/downLoad_QRcode.png" width="250" height="250"/>
+<img src="https://github.com/uncleLian/vue2-native/raw/master/screenshots/downLoad_QRcode.png" width="250" height="250"/>
 
 ## 功能
 
@@ -185,7 +187,7 @@ npm run build（File in the docs folder）
 ```
 
 ## 捐赠
-如果你觉得这个项目帮助到了你，你可以请我喝一杯饮料表示支持🍹
+如果你觉得这个项目帮助到了你，你可以请我喝一杯果汁表示支持🍹
 
 <img src="https://github.com/uncleLian/vue2-blog/raw/master/screenshots/donate.jpg" width="500px" style="max-width: 100%;"/>
 
@@ -197,6 +199,6 @@ npm run build（File in the docs folder）
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT)
+[MIT](https://github.com/uncleLian/vue2-native/blob/master/LICENSE)
 
 Copyright (c) 2017-present，uncleLian
