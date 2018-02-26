@@ -54,7 +54,7 @@ module.exports = {
 
     // Paths
     assetsRoot: path.resolve(__dirname, '../docs'),
-    assetsSubDirectory: '',       // 这里取消了static目录，是因为cordova打包必须是css，js文件夹的格式，防止资源引用路径出错
+    assetsSubDirectory: 'static',  // 打包成app请删除static，因为cordova打包必须是css，js文件夹的格式，防止资源引用路径出错
     assetsPublicPath: '/',        // cordova打包用'./'，原因是引用资源的问题。部署浏览器服务请使用 '/'
 
     /**

@@ -158,6 +158,7 @@ export default {
             }
             ul{
                 margin: 0.266rem 0;
+                font-size: 0;
                 li {
                     display: inline-block;
                     width: 25%;
