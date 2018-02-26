@@ -50,12 +50,12 @@ module.exports = {
   
   build: {
     // Template for index.html
-    index: path.resolve(__dirname, '../dist/index.html'),
+    index: path.resolve(__dirname, '../docs/index.html'),
 
     // Paths
-    assetsRoot: path.resolve(__dirname, '../dist'),
+    assetsRoot: path.resolve(__dirname, '../docs'),
     assetsSubDirectory: '',       // 这里取消了static目录，是因为cordova打包必须是css，js文件夹的格式，防止资源引用路径出错
-    assetsPublicPath: '/',      // cordova打包用'./'，原因是引用资源的问题。部署服务器请使用 '/'
+    assetsPublicPath: '/',        // cordova打包用'./'，原因是引用资源的问题。部署浏览器服务请使用 '/'
 
     /**
      * Source Maps
