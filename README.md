@@ -74,15 +74,15 @@ vue2-native 是一个仿今日头条app的[混合开发](https://baike.baidu.com
 
 - 首页、详情页
 
-<img src="https://github.com/uncleLian/vue2-news/raw/master/screenshots/native_index.png" width="365" height="619"/> <img src="https://github.com/uncleLian/vue2-news/raw/master/screenshots/native_detail.png" width="365" height="619"/>
+<img src="https://github.com/uncleLian/vue2-native/raw/master/screenshots/native_index.png" width="365" height="619"/> <img src="https://github.com/uncleLian/vue2-native/raw/master/screenshots/native_detail.png" width="365" height="619"/>
 
 - 频道页、用户页
 
-<img src="https://github.com/uncleLian/vue2-news/raw/master/screenshots/native_channel.png" width="365" height="619"/> <img src="https://github.com/uncleLian/vue2-news/raw/master/screenshots/native_user.png" width="365" height="619"/>
+<img src="https://github.com/uncleLian/vue2-native/raw/master/screenshots/native_channel.png" width="365" height="619"/> <img src="https://github.com/uncleLian/vue2-native/raw/master/screenshots/native_user.png" width="365" height="619"/>
 
 - 后台文章管理页、广告页
 
-<img src="https://github.com/uncleLian/vue2-news/raw/master/screenshots/native_health.png" width="365" height="619"/> <img src="https://github.com/uncleLian/vue2-news/raw/master/screenshots/native_ad.png" width="365" height="619"/>
+<img src="https://github.com/uncleLian/vue2-native/raw/master/screenshots/native_health.png" width="365" height="619"/> <img src="https://github.com/uncleLian/vue2-native/raw/master/screenshots/native_ad.png" width="365" height="619"/>
 
 ## 目录结构
 
