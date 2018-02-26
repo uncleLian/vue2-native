@@ -5,7 +5,7 @@
 ![image](https://img.shields.io/badge/mint--ui-2.2.13-blue.svg)
 
 ## 简介
-vue2-native 是一个仿今日头条app的混合开发项目，共20个页面，涉及文章的分类、展示、阅读、推荐、搜索和用户的登录、评论、收藏以及后台文章编辑等等，是一个完整的生态链。其复杂度不用说大家也能感受到。这是一个Vue进阶很好的机会，请耐心品味。
+vue2-native 是一个仿今日头条app的[混合开发](https://baike.baidu.com/item/hybrid%20app/270520?fr=aladdin)项目，页面代码使用Vue开发，原生功能使用[cordova](http://cordova.axuer.com/)并打包成app，共20个页面，涉及文章的分类、展示、阅读、推荐、搜索和用户的登录、评论、收藏以及后台文章编辑等等，是一个完整的生态链。其复杂度不用说大家也能感受到。这是一个很好的vue进阶机会，请耐心阅读。
 
 ## 说明
 > 如果对你有帮助，您可以点右上角 "star"一下，非常感谢！^_^ 🌹
@@ -19,25 +19,23 @@ vue2-native 是一个仿今日头条app的混合开发项目，共20个页面，
 - 第一阶段：[vue2-echo](https://github.com/uncleLian/vue2-echo) —— echo回声（ 移动端，难度：★★☆☆☆ ）
 - 第二阶段：[vue2-news](https://github.com/uncleLian/vue2-news) —— 今日头条（ 移动端，难度：★★★☆☆ ）
 - 第三阶段：[vue2-health](https://github.com/uncleLian/vue2-health) —— 头条号（ pc端，难度：★★★☆☆ ）
-- 第四阶段：[vue2-native](https://github.com/uncleLian/vue2-native) —— 今日头条（ 移动端，难度：★★★★☆ ）
+- 第四阶段：[vue2-native](https://github.com/uncleLian/vue2-native) —— 今日头条（ native端，难度：★★★★☆ ）
 
 ##### 注：此系列只关注前端项目的实现，后端等知识不是此系列的范围，但会告知一二。
 
 ## 注意
 
-> 1、请把项目里的mint-ui.common.js文件替换掉 node_modules/minit-ui/lib/mint-ui.common.js文件。主要优化下拉动作和左右滑动的体验。详细查看文章 [饿了么mint-ui库loadmore组件的下拉问题](http://liansixin.win/2017/08/01/mint-ui/)
+> 1、本地运行项目请把项目里的mint-ui.common.js文件替换掉 node_modules/minit-ui/lib/mint-ui.common.js文件。主要优化下拉动作和左右滑动的体验。详细查看文章 [饿了么mint-ui库loadmore组件的下拉问题](http://liansixin.win/2017/08/01/mint-ui/)
 
-> 2、该项目使用vue-router的hash模式，项目里有自己实现用来记录页面滚动位置的代码，大家可以参考。如需history模式的实例。请参考第一阶段和第三阶段的项目vue2-echo、vue2-health
+> 2、项目演示是运行在浏览器的，项目的某些代码是不能生效的，这些是用于app的，如：获取设备uuid、微信客户端登录等。
 
-> 3、native端某些代码在浏览器里是不能生效的，这些是用于手机app的，如：获取设备uuid、微信客户端登录等。技术是利用cordova打包成app和使用cordova的一些插件。具体请查看[cordova官网](http://cordova.axuer.com/)
+> 3、本地浏览器运行项目出现灰屏，可能是打开了/app.vue文件beforeRouteEnter钩子的代码。这里主要是用于app需要保证加载完cordova插件才能进入项目。浏览器打开这段代码是无法进入项目的。
 
-> 4、如果运行项目是灰屏，那可能是打开了app.vue文件beforeRouteEnter钩子的代码。这个主要是用于app需要保证加载完cordova插件才能进入项目。浏览器打开这段代码是进不到项目的。
-
-> 5、关于后台文章管理，操作的都是真实后台数据，为了大家都能查看一个很真的数据信息，请勿随意修改原有数据，可以新建任务去操作查看效果，谢谢啦。
+> 4、关于后台文章管理，操作的都是真实后台数据，为了大家都能查看一个很真的数据信息，请勿随意修改原有数据，可以新建去操作查看效果。
 
 ## 项目演示 
 
-[native端演示请戳这里](http://native.liansixin.win)（请使用手机模式预览）
+[项目演示请戳这里](http://native.liansixin.win)（请使用手机模式预览）
 
 <img src="https://github.com/uncleLian/vue2-news/raw/master/screenshots/native_QRcode.png" width="250" height="250"/>
 
@@ -46,12 +44,6 @@ vue2-native 是一个仿今日头条app的混合开发项目，共20个页面，
 <img src="https://github.com/uncleLian/vue2-news/raw/master/screenshots/downLoad_QRcode.png" width="250" height="250"/>
 
 ## 功能
-
-#### 共同功能
-- [x] 热点文章和搜索推荐（后台算法）
-- [x] 文章标签（后台算法）
-- [x] 分享功能（移动端分享网址，native端微信分享）
-- [x] 搜索功能（关键字高亮显示）
 
 #### 业务功能
 - [x] 启动广告页
@@ -64,6 +56,7 @@ vue2-native 是一个仿今日头条app的混合开发项目，共20个页面，
 - [x] 阅读历史、评论历史
 - [x] 文章后台管理（发表、修改、删除、撤回、预览等功能）
 - [x] 意见反馈
+- [x] ...
 
 #### 其他功能
 - [x] 下拉上滑查看更多内容
@@ -72,7 +65,8 @@ vue2-native 是一个仿今日头条app的混合开发项目，共20个页面，
 - [x] 右滑返回上一页（指令）
 - [x] 视频播放的加载、重播指示以及悬浮等
 - [x] 热更新、版本更新
-- [x] GPS定位
+- [x] GPS定位等
+- [x] ...
 
 ## 部分截图
 
@@ -189,6 +183,11 @@ npm run dev
 # build for production with minification
 npm run build
 ```
+
+## 捐赠
+如果你觉得这个项目帮助到了你，你可以请我喝一杯饮料表示支持🍹
+
+<img src="https://github.com/uncleLian/vue2-blog/raw/master/screenshots/donate.jpg" width="500px" style="max-width: 100%;"/>
 
 ## 交流
 
